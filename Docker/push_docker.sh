@@ -2,5 +2,5 @@
 
 VERSION=`cat VERSION.txt`
 
-docker push brianjohnhaas/evidencemodeler:${VERSION} 
-docker push brianjohnhaas/evidencemodeler:latest 
+docker push helrim/evidencemodeler:${VERSION} 
+docker push helrim/evidencemodeler:latest 
