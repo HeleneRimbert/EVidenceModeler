@@ -9,7 +9,7 @@ if [ -e $simg_name ]; then
     rm -f $simg_name
 fi
 
-singularity build ${simg_name} docker://brianjohnhaas/evidencemodeler:$VERSION
+singularity build ${simg_name} docker://helrim/evidencemodeler:$VERSION
 
 singularity exec -e ${simg_name} EVidenceModeler --version
 
