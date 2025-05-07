@@ -73,9 +73,9 @@ WORKDIR $SRC
 ENV EVM_VERSION=2.1.0
 ENV EVM_CO=b59a70da3f91c98122d51ddbbebf1ec895c2955b
 
-RUN git clone https://github.com/EVidenceModeler/EVidenceModeler.git && \
+RUN git clone https://github.com/HeleneRimbert/EVidenceModeler.git && \
     cd EVidenceModeler && \
-    git checkout ${EVM_CO} && \
+    # git checkout ${EVM_CO} && \
     git submodule init && git submodule update && \
     make && \
     mv * $BIN/
